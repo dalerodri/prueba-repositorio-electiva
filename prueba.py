@@ -39,7 +39,7 @@ ax.set_xlabel('Eje X')
 ax.set_ylabel('Eje Y')
 ax.grid(True, alpha=0.3)
 ax.axis('equal')  
-
+plt.savefig('elipse.png', dpi=300, bbox_inches='tight', facecolor='white')
 plt.tight_layout()
 plt.show()
 
@@ -65,6 +65,6 @@ plt.xlabel('Meses')
 plt.ylabel('Productos')
 plt.xticks(np.arange(12), ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'])
 plt.yticks(np.arange(10), [f'Prod {i+1}' for i in range(10)])
-
+plt.savefig('mapa_calor.png', dpi=300, bbox_inches='tight', facecolor='white')
 plt.tight_layout()
 plt.show()
